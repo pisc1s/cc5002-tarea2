@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="tarea1.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="tarea1.js"></script>
+		<title>Ver traslados</title>
+	</head>
+	<body>
+		<div class="topnav">
+  			<a href="inicio.html" id="inicio">Inicio</a>
+  			<a href="agregar-traslado.html" id="agregar-traslado">Agregar traslado</a>
+  			<a href="agregar-voluntario.html" id="agregar-voluntario">Agregar voluntario</a>
+  			<a class=active href="ver-traslados.html" id="ver-traslados">Ver traslados</a>
+			<a href="ver-voluntarios.html" id="ver-voluntarios">Ver voluntarios</a>
+		</div>
+		<br>
+		&nbsp;<a href="ver-traslados.html" style="font-size: 15px" id="volver-listado-traslados">Volver al listado</a>
+		<br><br>
+		<div id="ejemplo2-traslado">
+			<div class="row">
+				<div class="column">
+					<fieldset>
+						<legend>Origen:</legend>
+						<label>La Serena, Región de Coquimbo</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Destino:</legend>
+						<label>Santiago, Región Metropolitana</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Viaje:</legend>
+						<label>Fecha: 2019-05-07</label>
+						<br><br>
+						<label>Espacio necesario: 100x100x100</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Contacto:</legend>
+						<label>Nombre: Chandler Bing</label>
+						<br><br>
+						<label>Email: chandlerbing@friends.com</label>
+						<br><br>
+						<label>Número de celular: +56921122112</label>
+						<br><br>
+					</fieldset>
+				</div>
+				<div class="column">
+					<fieldset>
+						<legend>Mascota:</legend>
+						<label><img src="ejemplo2-1.jpg"
+									alt="perro" width="320" height="240" id="traslado2-1-imagen"></label>
+						<label><img src="ejemplo2-2.jpg"
+									alt="perro" width="320" height="240" id="traslado2-2-imagen"></label>
+						<br><br>
+					</fieldset>
+				</div>
+				<div id="myModal2-1" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<img src="ejemplo2-1.jpg"
+									alt="perro" width="800" height="600" id="traslado2-1-imagen-grande">
+					</div>
+				</div>
+				<div id="myModal2-2" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<img src="ejemplo2-2.jpg"
+									alt="perro" width="800" height="600" id="traslado2-2-imagen-grande">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="tarea1.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="tarea1.js"></script>
+		<title>Ver traslados</title>
+	</head>
+	<body>
+		<div class="topnav">
+  			<a href="inicio.html" id="inicio">Inicio</a>
+  			<a href="agregar-traslado.html" id="agregar-traslado">Agregar traslado</a>
+  			<a href="agregar-voluntario.html" id="agregar-voluntario">Agregar voluntario</a>
+  			<a class=active href="ver-traslados.html" id="ver-traslados">Ver traslados</a>
+			<a href="ver-voluntarios.html" id="ver-voluntarios">Ver voluntarios</a>
+		</div>
+		<br>
+		&nbsp;<a href="ver-traslados.html" style="font-size: 15px" id="volver-listado-traslados">Volver al listado</a>
+		<br><br>
+		<div id="ejemplo5-traslado">
+			<div class="row">
+				<div class="column">
+					<fieldset>
+						<legend>Origen:</legend>
+						<label>Ñuñoa, Región Metropolitana</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Destino:</legend>
+						<label>Talca, Región del Maule</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Viaje:</legend>
+						<label>Fecha: 2019-11-03</label>
+						<br><br>
+						<label>Espacio necesario: 50x50x50</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Contacto:</legend>
+						<label>Nombre: Phoebe Buffay</label>
+						<br><br>
+						<label>Email: phoebebuffay@friends.com</label>
+						<br><br>
+						<label>Número de celular: +56912345678</label>
+						<br><br>
+					</fieldset>
+				</div>
+				<div class="column">
+					<fieldset>
+						<legend>Mascota:</legend>
+						<label><img src="ejemplo5.jpg"
+									alt="tortuga" width="320" height="240" id="traslado5-imagen"></label>
+						<br><br>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div id="myModal5" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="ejemplo5.jpg"
+							alt="tortuga" width="800" height="600" id="traslado5-imagen-grande">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="tarea1.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="tarea1.js"></script>
+		<title>Ver traslados</title>
+	</head>
+	<body>
+		<div class="topnav">
+  			<a href="inicio.html" id="inicio">Inicio</a>
+  			<a href="agregar-traslado.html" id="agregar-traslado">Agregar traslado</a>
+  			<a href="agregar-voluntario.html" id="agregar-voluntario">Agregar voluntario</a>
+  			<a class=active href="ver-traslados.html" id="ver-traslados">Ver traslados</a>
+			<a href="ver-voluntarios.html" id="ver-voluntarios">Ver voluntarios</a>
+		</div>
+		<br>
+		&nbsp;<a href="ver-traslados.html" style="font-size: 15px" id="volver-listado-traslados">Volver al listado</a>
+		<br><br>
+		<div id="ejemplo4-traslado">
+			<div class="row">
+				<div class="column">
+					<fieldset>
+						<legend>Origen:</legend>
+						<label>Puerto Montt, Región de los Lagos</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Destino:</legend>
+						<label>Llanquihue, Región de los Lagos</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Viaje:</legend>
+						<label>Fecha: 2019-09-30</label>
+						<br><br>
+						<label>Espacio necesario: 30x30x30</label>
+						<br><br>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Contacto:</legend>
+						<label>Nombre: Joey Tribbiani</label>
+						<br><br>
+						<label>Email: joeytribbiani@friends.com</label>
+						<br><br>
+						<label>Número de celular: +56912345678</label>
+						<br><br>
+					</fieldset>
+				</div>
+				<div class="column">
+					<fieldset>
+						<legend>Mascota:</legend>
+						<label><img src="ejemplo4.jpg"
+									alt="gato" width="320" height="240" id="traslado4-imagen"></label>
+						<br><br>
+						<label>Descripción: Tomi es un gatito muy cariñoso. Suele lamer la mano de quién le hace cariño.</label><br>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+		<div id="myModal4" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="ejemplo4.jpg"
+							alt="gato" width="800" height="600" id="traslado4-imagen-grande">
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="tarea1.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="tarea1.js"></script>
+		<title>Agregar voluntario</title>
+	</head>
+	<body>
+		<div class="topnav">
+  			<a href="index.html" id="inicio">Inicio</a>
+  			<a href="agregar-traslado.html" id="agregar-traslado">Agregar traslado</a>
+  			<a class=active href="agregar-voluntario.html" id="agregar-voluntario">Agregar voluntario</a>
+  			<a href="ver-traslados.html" id="ver-traslados">Ver traslados</a>
+			<a href="ver-voluntarios.html" id="ver-voluntarios">Ver voluntarios</a>
+		</div>
+		<br>
+		<form>
+			<fieldset>
+				<legend>Datos:</legend>
+				<label>Nombre:</label><br><br>
+				<input type="text" size=80 id="nombre-voluntario" name="nombre-voluntario">
+				<br>
+				<span id="nombre-voluntario-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				<br><br>
+				<label>Email:</label><br><br>
+				<input type="text" size=30 id="email-voluntario" name="email-voluntario">
+				<span id="email-voluntario-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				&nbsp;
+				<label>Número de celular:</label>&nbsp;
+				<input type="text" size=15 id="celular-voluntario" name="celular-voluntario" placeholder="+56911111111">
+				<span id="celular-voluntario-span" style="display: none; color: #CC0000;">Debe ingresar un número de celular en el formato +56911111111</span>
+				<br><br>
+				<label>Espacio disponible:</label><br><br>
+				<select id="espacio-disponible" name="espacio-disponible">
+					<option disabled selected>Seleccionar dimensiones</option>
+					<option value="30x30x30">30x30x30</option>
+					<option value="50x50x50">50x50x50</option>
+					<option value="100x100x100">100x100x100</option>
+					<option value="más">más</option>
+				</select>
+				<span id="espacio-disponible-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				<br><br>
+				<div id="más-espacio-disponible">
+					<label>Ingrese el espacio disponible:</label><br><br>
+					<input type="text" id="más-espacio-disponible-input">
+					<span id="más-espacio-disponible-input-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				</div>
+				<br>
+				<label>Región disponible:</label> &nbsp;
+				<select id="region-disponible" name="region-disponible">
+				</select>
+				<span id="region-disponible-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				&nbsp;
+				<label>Comuna disponible:</label> &nbsp;
+				<select id="comuna-disponible" name="comuna-disponible">
+				</select>
+				<span id="comuna-disponible-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				<input type="button" value="Agregar otra comuna" class="btn" id="agregar-otra-comuna">
+				<br><br>
+				<div id="extra1">
+					<label>Región:</label>&nbsp;
+					<select id="region-extra1" name="region-extra1">
+					</select>
+					&nbsp;
+					<label>Comuna:</label>&nbsp;
+					<select id="comuna-extra1" name="comuna-extra1">
+					</select>
+					<span id="comuna-extra1-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				</div>
+				<br>
+				<div id="extra2">
+					<label>Región:</label>&nbsp;
+					<select id="region-extra2" name="region-extra2">
+					</select>
+					&nbsp;
+					<label>Comuna:</label>&nbsp;
+					<select id="comuna-extra2" name="comuna-extra2">
+					</select>
+					<span id="comuna-extra2-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				</div>
+				<br>
+				<div id="extra3">
+					<label>Región:</label>&nbsp;
+					<select id="region-extra3" name="region-extra3">
+					</select>
+					&nbsp;
+					<label>Comuna:</label>&nbsp;
+					<select id="comuna-extra3" name="comuna-extra3">
+					</select>
+					<span id="comuna-extra3-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				</div>
+				<br>
+				<div id="extra4">
+					<label>Región:</label>&nbsp;
+					<select id="region-extra4" name="region-extra4">
+					</select>
+					&nbsp;
+					<label>Comuna:</label>&nbsp;
+					<select id="comuna-extra4" name="comuna-extra4">
+					</select>
+					<span id="comuna-extra4-span" style="display: none; color: #CC0000;">Campo requerido</span>
+				</div>
+				<br>
+				<label>Descripción:</label><br><br>
+				<textarea cols=40 rows=8 id="descripcion-voluntario" name="descripcion-voluntario"></textarea>
+				<br><span id="descripcion-voluntario-span" style="display: none; color: #CC0000;">Debe ingresar 500 caracteres o menos</span>
+				<br>
+				<input type="button" value="Enviar" style="float:right" class="btn enviar-voluntario" id="enviar-voluntario">
+			</fieldset>
+		</form>
+	</body>
+</html>
