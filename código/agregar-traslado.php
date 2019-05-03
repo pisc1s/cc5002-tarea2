@@ -12,13 +12,20 @@
 	<body>
 		<div class="topnav">
   			<a href="index.html" id="inicio">Inicio</a>
-  			<a class=active href="agregar-traslado.html" id="agregar-traslado">Agregar traslado</a>
+  			<a class=active href="agregar-traslado.php" id="agregar-traslado">Agregar traslado</a>
   			<a href="agregar-voluntario.html" id="agregar-voluntario">Agregar voluntario</a>
   			<a href="ver-traslados.html" id="ver-traslados">Ver traslados</a>
 			<a href="ver-voluntarios.html" id="ver-voluntarios">Ver voluntarios</a>
 		</div>
 		<br>
-		<form>
+		<div class="avisos">
+			<?php
+				if(isset($_GET['errores'])) {
+					echo $_GET['errores'];
+				}
+			?>
+		</div>
+		<form id="traslado-form" method="post" action="procesar_traslado.php">
 			<div class="row">
 				<div class="column">
 					<fieldset>
@@ -58,16 +65,16 @@
 						<label>Espacio necesario:</label><br>
 						<select id="espacio-necesario" name="espacio-necesario">
 							<option disabled selected>Seleccionar dimensiones</option>
-							<option value="30x30x30">30x30x30</option>
-							<option value="50x50x50">50x50x50</option>
-							<option value="100x100x100">100x100x100</option>
-							<option value="más">más</option>
+							<option value="1">30x30x30</option>
+							<option value="2">50x50x50</option>
+							<option value="3">100x100x100</option>
+							<option value="m�s">más</option>
 						</select>
 						<span id="espacio-necesario-span" style="display: none; color: #CC0000;">Campo requerido</span>
 						<br><br>
 						<div id="más-espacio-necesario">
 							<label>Ingrese el espacio necesario:</label><br>
-							<input type="text" id="más-espacio-necesario-input">
+							<input type="text" id="más-espacio-necesario-input" name="m�s-espacio-necesario-input">
 							<span id="más-espacio-necesario-input-span" style="display: none; color: #CC0000;">Campo requerido</span>
 						</div>
 					</fieldset>
@@ -78,12 +85,12 @@
 						<label>Tipo:</label><br>
 						<select id="tipo-mascota" name="tipo-mascota">
 							<option disabled selected>Seleccionar tipo</option>
-							<option value="perro">perro</option>
-							<option value="gato">gato</option>
-							<option value="hámster">hámster</option>
-							<option value="conejo">conejo</option>
-							<option value="tortuga">tortuga</option>
-							<option value="otro">otro</option>
+							<option value="1">perro</option>
+							<option value="2">gato</option>
+							<option value="3">hámster</option>
+							<option value="4">conejo</option>
+							<option value="5">tortuga</option>
+							<option value="6">otro</option>
 						</select>
 						<span id="tipo-mascota-span" style="display: none; color: #CC0000;">Campo requerido</span>
 						<br><br>
@@ -116,7 +123,7 @@
 						<span id="celular-span" style="display: none; color: #CC0000;">Debe ingresar un número de celular en el formato +56911111111</span><br><br>
 					</fieldset>
 					<br>
-					<input type="button" value="Enviar" style="float:right" class="btn enviar-traslado" id="enviar-traslado">
+					<input type="submit" value="Enviar" style="float:right" class="btn enviar-traslado" id="enviar-traslado">
 				</div>
 			</div>
 		</form>
